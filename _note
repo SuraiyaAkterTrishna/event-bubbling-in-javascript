@@ -13,8 +13,15 @@ The stopPropagation() method of the Event interface prevents further propagation
 
 stopPropagation() method মূলত event bubbling কে বন্ধ করতে ইউস করা হয়.
 
-1. stopPropagation() টার্গেটেড এলিমেন্ট এর উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়. তবে সমান লেভেল এর এলিমেন্ট কে বন্ধ করে না.
+- stopPropagation() টার্গেটেড এলিমেন্ট এর উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়. তবে সমান লেভেল এর এলিমেন্ট কে বন্ধ করে না.
 
-2. stopImmediatePropagation() টার্গেটেড এলিমেন্ট এর সমান লেভেল এর এলিমেন্ট সহ উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়.
+- stopImmediatePropagation() টার্গেটেড এলিমেন্ট এর সমান লেভেল এর এলিমেন্ট সহ উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়.
+
+
+
+
+Event Delegation : 
+
+Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object.
 
 */
