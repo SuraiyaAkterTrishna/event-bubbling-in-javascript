@@ -1,0 +1,20 @@
+/*
+1. Event Bubbling: We can understand event bubbling as a sequence of calling the event handlers when one element is nested in another element, and both the elements have registered listeners for the same event. So beginning from the deepest element to its parents covering all its ancestors on the way to top to bottom, calling is performed.
+
+Event bubbling হচ্ছে targeted element থেকে বুদবুদের ওঠার মতো উপরের দিকে ইভেন্ট ট্রিগার হতে হতে সর্বোচ্চ লেভেল পর্যন্ত যাবে.
+
+Event Capturing: 
+Event capturing is the event starts from top element to the target element.
+
+Event capture হচ্ছে সবচেয়ে উপরের এলিমেন্ট হতে নিচের দিকে  targeted element পর্যন্ত যাবে।
+
+Stop Propagation: 
+The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases.
+
+stopPropagation() method মূলত event bubbling কে বন্ধ করতে ইউস করা হয়.
+
+1. stopPropagation() টার্গেটেড এলিমেন্ট এর উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়. তবে সমান লেভেল এর এলিমেন্ট কে বন্ধ করে না.
+
+2. stopImmediatePropagation() টার্গেটেড এলিমেন্ট এর সমান লেভেল এর এলিমেন্ট সহ উপরের সব parent element কে ট্রিগার হওয়া stop করে দেয়.
+
+*/
